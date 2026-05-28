@@ -29,8 +29,9 @@ The project includes:
 
 ---
 
-##  Project Structure
+## Project Structure
 
+```text
 advertising-sales-prediction/
 │
 ├── dataset/
@@ -44,3 +45,4 @@ advertising-sales-prediction/
 │
 ├── README.md
 └── requirements.txt
+```
