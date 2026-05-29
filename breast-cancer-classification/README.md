@@ -37,6 +37,7 @@ breast-cancer-classification/
 │
 ├── src/
 │   ├── breast_cancer_decision_tree.py
+│   ├── breast_cancer_svm.py
 │   ├── breast_cancer_random_forest.py
 │   ├── breast_cancer_boosting_classifier.py
 │   ├── breast_cancer_individual_models.py
@@ -58,22 +59,27 @@ breast-cancer-classification/
 * Tree-based classification algorithm
 * Used for prediction and decision analysis
 
-#### 2. Logistic Regression
+#### 2. Support Vector Machine (SVM)
+
+* Powerful classification algorithm
+* Uses hyperplanes to separate classes effectively
+
+#### 3. Logistic Regression
 
 * Statistical classification algorithm
 * Suitable for binary classification problems
 
-#### 3. K-Nearest Neighbors (KNN)
+#### 4. K-Nearest Neighbors (KNN)
 
 * Instance-based learning algorithm
 * Classifies samples based on nearest neighbors
 
-#### 4. Random Forest Classifier
+#### 5. Random Forest Classifier
 
 * Ensemble learning technique
 * Uses multiple decision trees for improved accuracy and robustness
 
-#### 5. AdaBoost Classifier
+#### 6. AdaBoost Classifier
 
 * Boosting algorithm
 * Improves model performance by learning from previous prediction errors
@@ -122,6 +128,7 @@ The models are evaluated using:
 This project demonstrates:
 
 * Classification Algorithms
+* Support Vector Machines (SVM)
 * Ensemble Learning
 * Bagging Techniques
 * Boosting Techniques
