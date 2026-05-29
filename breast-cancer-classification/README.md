@@ -1,12 +1,12 @@
 # Breast Cancer Classification
 
-Machine Learning project for predicting the presence of breast cancer using different classification algorithms.
+Machine Learning project for predicting the presence of breast cancer using multiple classification and ensemble learning algorithms.
 
 ---
 
 ##  Project Overview
 
-This project uses multiple Machine Learning classification algorithms to predict whether breast cancer is present or not using the Breast Cancer dataset.
+This project uses various Machine Learning classification algorithms to predict whether breast cancer is present or not using the Breast Cancer dataset.
 
 The project demonstrates:
 
@@ -14,7 +14,8 @@ The project demonstrates:
 * Classification techniques
 * Model training
 * Model evaluation
-* Ensemble learning concepts
+* Ensemble learning methods
+* Voting-based classification
 
 ---
 
@@ -37,7 +38,10 @@ breast-cancer-classification/
 ├── src/
 │   ├── breast_cancer_decision_tree.py
 │   ├── breast_cancer_random_forest.py
-│   └── breast_cancer_boosting_classifier.py
+│   ├── breast_cancer_boosting_classifier.py
+│   ├── breast_cancer_individual_models.py
+│   ├── breast_cancer_hard_voting.py
+│   └── breast_cancer_soft_voting.py
 │
 ├── README.md
 └── requirements.txt
@@ -47,20 +51,46 @@ breast-cancer-classification/
 
 ##  Machine Learning Algorithms Used
 
-### 1. Decision Tree Classifier
+### Individual Classification Models
+
+#### 1. Decision Tree Classifier
 
 * Tree-based classification algorithm
 * Used for prediction and decision analysis
 
-### 2. Random Forest Classifier
+#### 2. Logistic Regression
+
+* Statistical classification algorithm
+* Suitable for binary classification problems
+
+#### 3. K-Nearest Neighbors (KNN)
+
+* Instance-based learning algorithm
+* Classifies samples based on nearest neighbors
+
+#### 4. Random Forest Classifier
 
 * Ensemble learning technique
-* Uses multiple decision trees for improved accuracy
+* Uses multiple decision trees for improved accuracy and robustness
 
-### 3. AdaBoost Classifier
+#### 5. AdaBoost Classifier
 
 * Boosting algorithm
-* Improves model performance by learning from previous errors
+* Improves model performance by learning from previous prediction errors
+
+---
+
+##  Voting Ensemble Methods
+
+### Hard Voting Classifier
+
+* Combines predictions from multiple classification models
+* Final prediction is based on majority voting
+
+### Soft Voting Classifier
+
+* Combines probability predictions from multiple classification models
+* Final prediction is based on average probabilities
 
 ---
 
@@ -69,10 +99,11 @@ breast-cancer-classification/
 1. Load Dataset
 2. Separate Features and Labels
 3. Split Dataset into Training and Testing Data
-4. Train Classification Model
-5. Predict Results
-6. Evaluate Model Accuracy
-7. Generate Confusion Matrix
+4. Train Individual Models
+5. Generate Predictions
+6. Apply Ensemble Learning Techniques
+7. Evaluate Model Performance
+8. Compare Classification Results
 
 ---
 
@@ -82,7 +113,17 @@ The models are evaluated using:
 
 * Accuracy Score
 * Confusion Matrix
+* Classification Report
 
+---
 
+##  Learning Outcomes
 
+This project demonstrates:
 
+* Classification Algorithms
+* Ensemble Learning
+* Bagging Techniques
+* Boosting Techniques
+* Voting Classifiers
+* Model Performance Comparison
